@@ -9,5 +9,6 @@ i'll add some screenshots and improved versions of it. AAAhh i use sqlite for da
   
 <img width="217" height="227" alt="image" src="https://github.com/user-attachments/assets/58ea0b3f-3d50-48a8-a407-73c7d564cd21" />
 <img width="217" height="217" alt="image" src="https://github.com/user-attachments/assets/1fa6a9ba-e6cc-4fa6-8200-46dd500c7dc5" />
-<img width="220" height="216" alt="image" src="https://github.com/user-attachments/assets/40d85f12-c994-43ef-9289-0824223edf45" />
+<img width="212" height="215" alt="image" src="https://github.com/user-attachments/assets/4bb14323-56c2-4086-9e65-bcdf9a4ac80c" />
+
 
