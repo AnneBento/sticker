@@ -1,6 +1,6 @@
 import sys
 from PyQt6.QtWidgets import QApplication
-from stickerNote import stickerNote
+from stickernote import stickerNote
 from database import iniciar_banco_de_dados, carregar_notas
 
 ativar_notas = []

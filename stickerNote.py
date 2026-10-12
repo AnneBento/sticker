@@ -1,6 +1,7 @@
 from PyQt6.QtCore import Qt, QPoint
 from PyQt6.QtWidgets import (QWidget, QTextEdit, QVBoxLayout, QHBoxLayout, QPushButton, QColorDialog)
 from database import salvar_notas, eliminar_notas
+from PyQt6.QtGui import QColor
 
 
 class stickerNote(QWidget):
@@ -14,7 +15,7 @@ class stickerNote(QWidget):
         self.iniciar_iu(content, x, y, w, h)
 
     def iniciar_iu(self, content, x, y, w, h):
-        self.setWindowFlags(Qt.WindowType.FramelessWindowHint | Qt.WindowType.SubWindow)
+        self.setWindowFlags(Qt.WindowType.FramelessWindowHint | Qt.WindowType.Tool)
         self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
         self.setGeometry(x, y, w, h)
 
@@ -62,6 +63,7 @@ class stickerNote(QWidget):
             QWidget {{
                 background-color: {self.color};
                 border-radius: 8px;
+                border: 2px solid rgba(0, 0, 0, 0.15);
             }}
             QTextEdit {{
                 background-color: transparent;
@@ -112,7 +114,7 @@ class stickerNote(QWidget):
         self.close()
 
     def mudar_cor(self):
-        color = QColorDialog.getColor()
+        color = QColorDialog.getColor(initial=QColor(self.color), parent=self, title="Escolha a Cor")
         if color.isValid():
             self.color = color.name()
             self.aplicar_estilo()
